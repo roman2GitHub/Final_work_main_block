@@ -10,3 +10,15 @@
 string[] array = new string[7] {"459", "17", "help", "work", "rem", "11", "Kazan"};
 string[] resarray = new string[array.Length];
 
+void CreatingArray(string[] array, string[] resarray)
+{
+    int count = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+    if(array[i].Length <= 3)
+        {
+        resarray[count] = array[i];
+        count++;
+        }
+    }
+}
