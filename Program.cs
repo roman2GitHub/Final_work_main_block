@@ -22,3 +22,14 @@ void CreatingArray(string[] array, string[] resarray)
         }
     }
 }
+void PrintArray(string[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write($"{array[i]} ");
+    }
+    Console.WriteLine();
+}
+
+CreatingArray(array, resarray);
+PrintArray(resarray);
