@@ -21,4 +21,34 @@
 
 2. Составлена блок-схема ![Блок схема](Diagram.jpg)
 
-3. Написание программы
+3. Создан Readme.md
+
+4. Код программы
+Код: string[] array = new string[7] {"459", "17", "help", "work", "rem", "11", "Kazan"};
+string[] resarray = new string[array.Length];
+
+void CreatingArray(string[] array, string[] resarray)
+{
+    int count = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+    if(array[i].Length <= 3)
+        {
+        resarray[count] = array[i];
+        count++;
+        }
+    }
+}
+void PrintArray(string[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write($"{array[i]} ");
+    }
+    Console.WriteLine();
+}
+
+CreatingArray(array, resarray);
+PrintArray(resarray);
+
+5. Коммиты ![Коммиты](Commits.jpg)
